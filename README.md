@@ -93,7 +93,7 @@ char test = 0b0100001
 char test = 'A'
 ```
 
-2 byte = 16 bit integer uint16_t / long unsigned int
+`2 byte` aka `16 bit integer` aka `uint16_t` aka `long unsigned int`
 
 ```
 0000 0000 0000 0000
