@@ -129,38 +129,9 @@ if (a < 100 - range && 100 + range < a) ...
 
 #### Complex Types
 
+```
 lists
-
-```
-int a [10];
-a[9] = 435; // set value 435 to the position 9th position
-a = {100, ..., 435}
-a.push(10) // adds an element to the end
-a.pop() // removes an element from the end
-a.slice(4, 3) // removes 3 elements starting from the 4th position
-```
-
-list of chars is a string
-
-```
-char word [11] = {'H', 'e', 'l', ...};
-String word = "Hello World";
-```
-
-structs to bundle different typed variables and functions in one tupple
-
-```
-struct Human {
-	byte age = 18;
-	int hasMoneyInThePocket = 892734;
-	String name = "Vasja";
-	...
-}
-```
-
-miscellaneous types
-
-```
+structs / objects / typles
 functions ...
 classes ...
 ```
@@ -273,7 +244,7 @@ i -= 1
 i --
 ```
 
-# 4. statements
+# 4. conditional statements
 
 ```
 int a;
@@ -330,6 +301,46 @@ if (a < b) {
 }
 ```
 
+# 6. collections
+
+lists
+
+```
+int a [10];
+a[9] = 435; // set value 435 to the position 9th position
+a = {100, ..., 435}
+a.push(10) // adds an element to the end
+a.pop() // removes an element from the end
+a.slice(4, 3) // removes 3 elements starting from the 4th position
+```
+
+list of chars is a string
+
+```
+char word [11] = {'H', 'e', 'l', ...};
+String word = "Hello World";
+```
+
+objects/structs/tuples 
+to bundle different typed variables and functions in one tupple
+
+```
+let person = {
+	name : 'vasja',
+	age: 25,
+	eyes: 'brown'
+}
+person.age // 25
+person['age'] // 25
+
+for (let key in person) {
+	if (key == 'age' && person[key] == 10)
+		person[key] = 46
+	if (key == 'eyes')
+		person[key] = 'blue'
+}
+```
+
 # 7. Loops
 
 classic loop
@@ -374,7 +385,7 @@ while (b) {
 }
 ```
 
-# 6. functions
+# 8. functions
 
 they give you
 
@@ -440,35 +451,7 @@ let recFunc = (parameter) => {
 let b = recFunc(2)
 ```
 
-# 7. collections
-
-array
-
-```
-int a [10] = {0, 4, 10};
-a[2] // 10
-```
-
-object
-
-```
-let person = {
-	name : 'vasja',
-	age: 25,
-	eyes: 'brown'
-}
-person.age // 25
-person['age'] // 25
-
-for (let key in person) {
-	if (key == 'age' && person[key] == 10)
-		person[key] = 46
-	if (key == 'eyes')
-		person[key] = 'blue'
-}
-```
-
-# 8. classes
+# 9. classes
 
 object
 
