@@ -1,13 +1,13 @@
-# Ten Holy Grail Blocks
+# Holy Grail Blocks
 
 1. CPU, Abstractions
 2. variables
 3. operators
-4. statements
+4. conditional statements
 5. scopes
-6. loops
-7. functions
-8. collections
+6. collections
+7. loops
+8. functions
 9. classes
 
 # 1. CPU
