@@ -129,12 +129,10 @@ if (a < 100 - range && 100 + range < a) ...
 
 #### Complex Types
 
-```
-lists
-structs / objects / typles
-functions ...
-classes ...
-```
+- lists
+- structs / objects / typles
+- functions
+- classes
 
 # 3. Operators
 
